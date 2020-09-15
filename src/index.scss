@@ -17,18 +17,19 @@ code {
   margin: 0 auto;
 }
 
-.search-field {
+.contacts__search-field {
   width: 100%;
   padding: 10px;
   font-size: 16px;
+  margin-top: 30px;
 }
 
-.contacts-list {
+.contacts__list {
   padding: 0;
   width: 100%;
 }
 
-.contact {
+.contacts__link {
   display: flex;
   align-items: center;
   font-family: sans-serif;
@@ -37,17 +38,17 @@ code {
   border-bottom: 1px dotted grey;
 }
 
-.contact-image {
+.contacts__image {
   border-radius: 50%;
   margin: 5px;
 }
 
-.contact-name {
+.contacts__name {
   font-size: 20px;
   font-weight: bold;
 }
 
-.contact-number {
+.contacts__number {
   font-size: 18px;
   color: grey;
 }
@@ -55,12 +56,10 @@ code {
 .submit-btn {
   min-width: 200px;
   background-size: 200% 200%;
-  /*background: radial-gradient(circle at 100%, #333, #333 27%, #eee 65%, #333 77%);*/
   text-align: center !important;
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
-  /*color: #ffff;*/
   vertical-align: middle;
   white-space: nowrap;
   letter-spacing: normal;
@@ -71,7 +70,7 @@ code {
   margin-top: 5px;
 }
 
-.input-authorisation {
+.form__input-authorisation {
   width: 100%;
   padding: 10px;
   font-size: 16px;

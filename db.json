@@ -1,11 +1,29 @@
 {
   "user": [
-    { "name": "ddwd", "password": 1113},
-    { "name": "typicode", "password": 111},
-    { "name": "alex", "password": 125},
-    { "name": "petr", "password": 1211},
-    { "name": "masha", "password": 11331},
-    { "name": "typicodeeee", "password": 123}
+    {
+      "name": "ddwd",
+      "password": 1113
+    },
+    {
+      "name": "typicode",
+      "password": 111
+    },
+    {
+      "name": "alex",
+      "password": 125
+    },
+    {
+      "name": "petr",
+      "password": 1211
+    },
+    {
+      "name": "masha",
+      "password": 11331
+    },
+    {
+      "name": "typicodeeee",
+      "password": 123
+    }
   ],
   "contacts": [
     {
@@ -13,17 +31,20 @@
       "name": "Darth Vader",
       "phoneNumber": "+250966666666",
       "image": "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg"
-    }, {
+    },
+    {
       "id": 2,
       "name": "Princess Leia",
       "phoneNumber": "+250966344466",
       "image": "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/2803/square_thumb%403x.jpg"
-    }, {
+    },
+    {
       "id": 3,
       "name": "Luke Skywalker",
       "phoneNumber": "+250976654433",
       "image": "https://www.maxim.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYwMzUwMDc2Njc2MzUxMDU1/luke-skywalker-light-saber-screengrab.jpg"
-    }, {
+    },
+    {
       "id": 4,
       "name": "Chewbacca",
       "phoneNumber": "+250456784935",

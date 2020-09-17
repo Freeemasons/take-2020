@@ -17,6 +17,10 @@ code {
   margin: 0 auto;
 }
 
+.contacts-info-layout {
+  flex-grow: 2;
+}
+
 .contacts__search-field {
   width: 100%;
   padding: 10px;
@@ -67,7 +71,12 @@ code {
   text-transform: none;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 30px;
+  background: transparent;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+  border-width: 1px;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .form__input-authorisation {
@@ -81,3 +90,35 @@ code {
 .form-layout {
   margin-top: 60px;
 }
+
+.contacts-form__input {
+  width: 46%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contacts-form-submit-btn {
+  min-width: 200px;
+  background-size: 200% 200%;
+  text-align: center !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  vertical-align: middle;
+  white-space: nowrap;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  background: transparent;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+  border-width: 1px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+

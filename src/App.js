@@ -22,9 +22,11 @@ function App() {
 
 
       <Switch>
-        <Route exact path="/" component={Form} />
+        <Route exact path="/"
+               component={Form} />
 
-        <Route  path="/contacts" component={Contacts} />
+        <Route  path="/contacts"
+                component={Contacts} />
       </Switch>
     </Router>
   );

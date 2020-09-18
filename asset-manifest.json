@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/take-2020/static/css/main.dcc71d00.chunk.css",
+    "main.js": "/take-2020/static/js/main.033343d0.chunk.js",
+    "main.js.map": "/take-2020/static/js/main.033343d0.chunk.js.map",
+    "runtime-main.js": "/take-2020/static/js/runtime-main.fb857a4c.js",
+    "runtime-main.js.map": "/take-2020/static/js/runtime-main.fb857a4c.js.map",
+    "static/css/2.22d6b5ec.chunk.css": "/take-2020/static/css/2.22d6b5ec.chunk.css",
+    "static/js/2.28c8de84.chunk.js": "/take-2020/static/js/2.28c8de84.chunk.js",
+    "static/js/2.28c8de84.chunk.js.map": "/take-2020/static/js/2.28c8de84.chunk.js.map",
+    "index.html": "/take-2020/index.html",
+    "precache-manifest.3dee0d32b0c127a9030b51d89ba30fbf.js": "/take-2020/precache-manifest.3dee0d32b0c127a9030b51d89ba30fbf.js",
+    "service-worker.js": "/take-2020/service-worker.js",
+    "static/css/2.22d6b5ec.chunk.css.map": "/take-2020/static/css/2.22d6b5ec.chunk.css.map",
+    "static/css/main.dcc71d00.chunk.css.map": "/take-2020/static/css/main.dcc71d00.chunk.css.map",
+    "static/js/2.28c8de84.chunk.js.LICENSE.txt": "/take-2020/static/js/2.28c8de84.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb857a4c.js",
+    "static/css/2.22d6b5ec.chunk.css",
+    "static/js/2.28c8de84.chunk.js",
+    "static/css/main.dcc71d00.chunk.css",
+    "static/js/main.033343d0.chunk.js"
+  ]
+}

@@ -16,7 +16,6 @@ class Form extends React.Component {
   }
 
   handleChange(event) {
-    console.log(event.target.value)
 
     this.setState({
       [event.target.name]: event.target.value
@@ -27,10 +26,9 @@ class Form extends React.Component {
     event.preventDefault();
     const requestUrl = `http://localhost:3000/user?name=${this.state.name}&password=${this.state.password}`
 
-    const response = fetch(requestUrl)
+    fetch(requestUrl)
       .then(res => res.json())
       .then(data => {
-          console.log('result', data)
         if (data.length) {
           this.props.history.push('/contacts')
         }
@@ -44,7 +42,9 @@ class Form extends React.Component {
           <Grid>
             <Row center="lg"
                  middle="xs">
-              <Col lg={6}
+              <Col
+                   lg={6}
+                   md={6}
                    xs={12}>
                 <form onSubmit={this.handleSubmit}>
                   <label>

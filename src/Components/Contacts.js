@@ -58,11 +58,9 @@ class Contacts extends React.Component {
 
   handleSubmitContact(e) {
 
-    console.log(e.target.value)
     e.preventDefault();
 
     const newId = this.state.displayedContacts.length + 1
-    console.log(newId)
 
     const newUser = JSON.stringify({
       name: this.state.contactName,
@@ -70,6 +68,10 @@ class Contacts extends React.Component {
       image: this.state.contactImage,
       id: newId
     })
+
+    if (!this.state.contactName.length || !this.state.contactNumber || !this.state.contactImage ) {
+      return
+    }
 
     fetch('http://localhost:3000/contacts', {
       method: 'POST',
@@ -79,17 +81,14 @@ class Contacts extends React.Component {
       }
     }).then(res => res.json())
       .then(data => {
-        console.log('result', data)
 
-        this.setState((prevState)=> ({
-          displayedContacts: [...prevState.displayedContacts, data]
-        }))
+          this.setState((prevState)=> ({
+            displayedContacts: [...prevState.displayedContacts, data]
+          }))
       })
   }
 
   handleAddContact(e) {
-
-    console.log(e.target.value)
 
     this.setState({
       [e.target.name]: e.target.value
@@ -140,7 +139,11 @@ class Contacts extends React.Component {
     return(
       <Grid>
         <Row >
-          <Col lg={6}>
+          <Col mdOffset={1}
+               lgOffset={2}
+               lg={4}
+               md={6}
+               xs={12}>
             <div className="contacts">
               <input type="text"
                      placeholder="Search..."
@@ -163,7 +166,7 @@ class Contacts extends React.Component {
                      className="contacts-form-submit-btn"
 
               />
-              <label>
+
                 <input type="text"
                        name="contactName"
                        className="contacts-form__input"
@@ -171,8 +174,8 @@ class Contacts extends React.Component {
                        value={this.state.contactName}
                        onChange={this.handleAddContact}
                         />
-              </label>
-              <label>
+
+
                 <input type="text"
                        name="contactNumber"
                        className="contacts-form__input"
@@ -180,8 +183,7 @@ class Contacts extends React.Component {
                        value={this.state.contactNumber}
                        onChange={this.handleAddContact}
                         />
-              </label>
-              <label>
+
                 <input type="text"
                        name="contactImage"
                        className="contacts-form__input"
@@ -189,7 +191,7 @@ class Contacts extends React.Component {
                        value={this.state.contactImage}
                        onChange={this.handleAddContact}
                 />
-              </label>
+
             </form>
 
           </Col>

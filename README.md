@@ -12,3 +12,5 @@ In the project directory, you can run:
 * yarn start
 * Open [http://localhost:3000](http://localhost:3000) or 3001 to view it in the browser.
 
+Server shoul be launched at the next window of the CLI.
+
